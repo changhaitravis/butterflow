@@ -69,7 +69,7 @@ if homebrew_prefix is not None:
     # if it exists:
     sys.path.insert(1, homebrew_site_pkgs)
 
-cflags       = ['-std=c11']  # c compilation flags
+cflags       = ['-std=c11', '-I/usr/include/ffmpeg', '-I/usr/include/opencv4']  # c compilation flags
 linkflags    = []            # linker flags
 cxxflags     = []
 

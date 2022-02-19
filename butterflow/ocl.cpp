@@ -7,7 +7,7 @@
     #include <CL/cl.h>
 #endif
 #include <opencv2/core/core.hpp>
-#include <opencv2/ocl/ocl.hpp>
+#include <opencv2/core/ocl.hpp>
 
 #define cl_safe(A) if((A) != CL_SUCCESS) { \
     PyErr_SetString(PyExc_RuntimeError, "opencl call failed"); \
